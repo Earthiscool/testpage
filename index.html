@@ -1,9 +1,261 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Example</title>
-    </head>
-    <body>
-        <p>This is an example of a simple HTML page with one paragraph.</p>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phyto - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #a8e063, #56ab2f); /* Green to blue gradient */
+            color: #333; /* Default text color */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 1rem;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        .logo-container {
+            text-align: center;
+            padding: 1rem 0;
+        }
+
+        .logo-container img {
+            max-width: 150px;
+            margin: 0 auto;
+        }
+
+        .content {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .content img {
+            max-width: 80%;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .video-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .video-container video {
+            max-width: 80%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-container {
+            position: relative;
+            max-width: 80%;
+            margin: 2rem auto;
+        }
+
+        .carousel-slide {
+            display: none;
+            text-align: center;
+        }
+
+        .carousel-slide img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .active {
+            display: block;
+        }
+
+        .carousel-caption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+        .carousel-nav {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            transform: translateY(-50%);
+        }
+
+        .carousel-nav span {
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .highlight-text {
+    font-size: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    font-weight: bold;
+}
+.sister-plants-description {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 80%;
+}
+
+.sister-plants-description p {
+    font-size: 2.0rem;
+    line-height: 1.6;
+}
+.colorful-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #fff;
+    background: linear-gradient(to right, #4CAF50, #2E8B57); /* Change shades of green */
+    transition: background 0.3s;
+}
+
+.colorful-button:hover {
+    background: linear-gradient(to right, #32CD32, #3CB371); /* Change shades of green on hover */
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="Heading.png" alt="Company Logo">
+        </div>
+        <h1>Phyto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="section1.html">Business Description</a></li>
+                <li><a href="section2.html">Market Analysis</a></li>
+                <li><a href="section3.html">Sales & Marketing</a></li>
+                <li><a href="section4.html">Management</a></li>
+                <li><a href="section5.html">Financials</a></li>
+                <li><a href="section6.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <img src="Company-Photo.jpg" alt="Company Image">
+    </div>
+
+    <div class="video-container">
+        <video controls>
+            <source src="Green Minimalist Beauty Product Sale Video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+    <div class="carousel-container" style="margin-bottom: 20px;">
+        <div class="carousel-slide active">
+            <img src="bean image.jpg" alt="Image 1">
+            <div class="carousel-caption">Bean Plant</div>
+        </div>
+        <div class="carousel-slide">
+            <img src="Corn Image.jpg" alt="Image 2">
+            <div class="carousel-caption">Corn Plant</div>
+        </div>
+        <div class="carousel-slide">
+            <img src="BONNIE_squash_iStock-178387346-1800px_6e9f1750-fa83-4a45-8120-3d0ed4fbb618.jpg" alt="Image 3">
+            <div class="carousel-caption">Squash Plant</div>
+        </div>
+
+        <div class="carousel-nav">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
+        </div>
+        <div class="highlight-text">
+            The Three Sister Plants
+        </div>
+        <div class="sister-plants-description">
+            <p>The Iroquois and the Cherokee called corn, bean, and squash “the three sisters” because they nurture each other like family when planted together. These agriculturalists placed corn in small hills planting beans around them and interspersing squash throughout the field.</p>
+        </div>
+        <div style="margin-bottom: 100px;"></div>
+        <div class="button-container" style="text-align: center;">
+            <a href="section1.html" class="colorful-button" style="font-size: 20px; padding: 15px 30px;">Go to Business Description</a>
+        </div>
+        
+        
+    </div>
+
+    <footer>
+        &copy; 2024 Phyto
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prev = document.querySelector('.prev');
+        const next = document.querySelector('.next');
+
+        function showSlides(index) {
+            if (index >= slides.length) slideIndex = 0;
+            if (index < 0) slideIndex = slides.length - 1;
+
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[slideIndex].classList.add('active');
+        }
+
+        prev.addEventListener('click', () => {
+            showSlides(--slideIndex);
+        });
+
+        next.addEventListener('click', () => {
+            showSlides(++slideIndex);
+        });
+
+        // Auto carousel
+        setInterval(() => {
+            showSlides(++slideIndex);
+        }, 3000); // Change slide every 3 seconds
+    </script>
+</body>
 </html>
